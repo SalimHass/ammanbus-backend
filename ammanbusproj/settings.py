@@ -92,10 +92,13 @@ WSGI_APPLICATION = 'ammanbusproj.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "danokedu20lnu8",
+        "USER": "fwwkmtktoohecx",
+        "PASSWORD": "e3d78f7fabe7510e3ffa073769e4b322456e86a012cb9379efece6602934a7d3",
+        "HOST": "ec2-54-77-40-202.eu-west-1.compute.amazonaws.com",
+        "PORT": "5432",
     }
 }
 
