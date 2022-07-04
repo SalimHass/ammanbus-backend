@@ -1,5 +1,5 @@
-from pyexpat import model
-from turtle import distance
+
+
 from django.db import models
 
 # Create your models here.
