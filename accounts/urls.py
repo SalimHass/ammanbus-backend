@@ -1,12 +1,21 @@
 from django.urls import path
-from . import views
+from django.urls import path, include
+from rest_framework import routers
+from accounts import views
+
+# from accounts.api.viewsets import DriverDashBoardViewSet, PassengersDashBoardViewSet
+
+
+router = routers.DefaultRouter()
+# router.register(r'driver-dashboard', DriverDashBoardViewSet)
+# router.register(r'passenger-dashboard', PassengersDashBoardViewSet)
+
+router.register(r'register', views.AccountViewSet)
+
 
 
 urlpatterns = [
-    path('register/', views.register, name='register'),
-    path('login/', views.login_user, name='login_user'),
-    path('logout/', views.logout_user, name='logout_user'),
-    path('home/', views.home, name='home'),
-    path('passenger_register/', views.passenger_register.as_view(), name='passenger_register'),
-    path('driver_register/', views.driver_register.as_view(), name='driver_register')
+    path('', include(router.urls)),
+    path('register/', include('rest_framework.urls', namespace='rest_framework')),
+
 ]

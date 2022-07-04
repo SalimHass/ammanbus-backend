@@ -3,7 +3,7 @@
 from django.db import models
 
 # Create your models here.
-from accounts.models import User
+from accounts.models import Account
 
 
 class Station(models.Model):
@@ -41,7 +41,7 @@ class StationStop(models.Model):
 
 
 class Driver(models.Model):
-    user = models.ForeignKey(User, related_name='user', on_delete=models.CASCADE)
+    user = models.CharField(max_length=100)
     name = models.CharField(max_length=100)
     gender = models.CharField(max_length=1)
     birth = models.DateField()

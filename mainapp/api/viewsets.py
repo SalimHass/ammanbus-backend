@@ -13,7 +13,7 @@ from mainapp.models import Station, Route, StationStop, FareTable, Bus, Driver
 from .serializers import StationSerializer, RouteSerializer, StationStopSerializer, BusSerializer, DriverSerializer
 
 
-class IsDriver(permissions.BasePermission):
+"""class IsDriver(permissions.BasePermission):
 
     def has_permission(self, request, view):
         if request.user.is_authenticated and request.user.is_driver:
@@ -23,7 +23,7 @@ class IsDriver(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         if obj.driver.user == request.user:
             return True
-        return False
+        return False"""
 
 
 class StationViewSet(viewsets.ModelViewSet):
