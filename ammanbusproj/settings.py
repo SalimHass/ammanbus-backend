@@ -157,5 +157,7 @@ REST_FRAMEWORK = {
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+CSRF_TRUSTED_ORIGINS = ["https://ammanbus.herokuapp.com/"]
+
 import django_heroku
 django_heroku.settings(locals())
