@@ -29,7 +29,7 @@ class StationStop(models.Model):
     route = models.ForeignKey(Route, related_name='station_stops', on_delete=models.CASCADE)
     station = models.ForeignKey(Station, on_delete=models.CASCADE)
     order_number = models.IntegerField()
-    time_to_next_station = models.DurationField()
+    time_to_next_station = models.IntegerField()
     distance_to_next_station = models.IntegerField()
 
     def __str__(self):
