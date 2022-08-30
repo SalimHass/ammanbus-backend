@@ -94,10 +94,10 @@ WSGI_APPLICATION = 'ammanbusproj.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "danokedu20lnu8",
-        "USER": "fwwkmtktoohecx",
-        "PASSWORD": "e3d78f7fabe7510e3ffa073769e4b322456e86a012cb9379efece6602934a7d3",
-        "HOST": "ec2-54-77-40-202.eu-west-1.compute.amazonaws.com",
+        "NAME": "d4tfte4pkp7lkb",
+        "USER": "vrjvclcjjfefns",
+        "PASSWORD": "11d18c5751ffbba44a15f9801bff0131a5657125135e128a8d57e1101ba111c3",
+        "HOST": "ec2-54-220-255-121.eu-west-1.compute.amazonaws.com",
         "PORT": "5432",
     }
 }
